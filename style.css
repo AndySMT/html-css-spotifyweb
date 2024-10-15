@@ -20,3 +20,30 @@ ul {
 .debug {
     border: 1px solid red;
 }
+
+/* ********************************
+            ROOT VARIABLES
+******************************** */
+:root {
+    --color-dark: #141922;
+    --color-darkgrey: #282828;
+    --color-light: #ffffff;
+    --color-black: #000000;
+    --color-lightgrey: #c1c1c1;
+    --color-highlight: #9ae22d;
+    --color-redcolor: #ca1717;
+}
+
+/* ********************************
+            BODY
+******************************** */
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+/* ********************************
+            FOOTER
+******************************** */
+footer {
+    background-color: var(--color-darkgrey);
+}
