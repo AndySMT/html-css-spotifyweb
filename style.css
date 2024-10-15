@@ -37,7 +37,9 @@ ul {
 /* ********************************
             GLOBAL
 ******************************** */
-
+.gap-10 {
+    gap: 10px;
+}
 
 /* ********************************
             POSITION
@@ -54,14 +56,27 @@ ul {
     display: flex;
 }
 
-.j-between {
-    justify-content: space-between;
-}
-
 .f-collumn {
     flex-direction: column;
 }
 
+.j-between {
+    justify-content: space-between;
+}
+
+.j-around {
+    justify-content: space-around;
+}
+
+.j-center {
+    justify-content: center;
+}
+
+
+
+.a-center {
+    align-items: center;
+}
 
 
 /* ********************************
@@ -87,7 +102,7 @@ body {
     width: 300px;
     background-color: var(--color-black);
     padding: 15px;
-    ;
+
 }
 
 #home {
@@ -109,6 +124,7 @@ body {
 
 #playlist {
     padding: 15px;
+    flex-grow: 2;
 }
 
 /* non funziona */
@@ -118,9 +134,19 @@ body {
 }
 
 /* manca tutta la parte dell user */
-#user {
-    height:
+#user a {
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: var(--color-lightgrey);
+}
 
+#user a:hover {
+    color: var(--color-light)
+}
+
+#user .user-link {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* #user {
@@ -132,6 +158,14 @@ body {
     flex-grow: 4;
 } */
 
+#main-content h2 {
+    padding: 25px;
+}
+
+#card {
+    width: calc(100% : 6);
+    padding: 15px;
+}
 
 /* ********************************
             FOOTER
