@@ -39,6 +39,7 @@ ul {
 ******************************** */
 body {
     font-family: "Montserrat", sans-serif;
+    background-color: var(--color-darkgrey);
 }
 
 /* ********************************
@@ -46,4 +47,5 @@ body {
 ******************************** */
 footer {
     background-color: var(--color-darkgrey);
+    color: var(--color-light);
 }
