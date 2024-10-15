@@ -33,13 +33,47 @@ ul {
     --color-highlight: #9ae22d;
     --color-redcolor: #ca1717;
 }
+/* ********************************
+            GLOBAL
+******************************** */
+
+
+/* ********************************
+            FLEX
+******************************** */
+.d-flex {
+    display: flex;
+}
+.j-between {
+    justify-content: space-between;
+}
+
+
 
 /* ********************************
             BODY
 ******************************** */
+/* Header */
+header {
+    height: 80px;
+    width: 100%;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
-    background-color: var(--color-darkgrey);
+    color: var(--color-light) ;
+    background-color: var(--color-dark);
+    
+}
+#middle {
+
+width: 100%;
+/* width: calc(100% - 300px); */
+height: calc(100vh - 180px);
+
+}
+#sidebar {
+    width: 300px;
 }
 
 /* ********************************
@@ -48,4 +82,8 @@ body {
 footer {
     background-color: var(--color-darkgrey);
     color: var(--color-light);
+    flex-shrink: 0;
+    flex-grow: 0;
+    height: 100px;
+    width: 100%;
 }
