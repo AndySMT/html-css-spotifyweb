@@ -8,27 +8,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Spotify</title>
 </head>
 
 <body>
     <!--******************************************************
-                                HEADER
-        ******************************************************-->
-    <header class="debug">
-        <div>Header</div>
-    </header>
-    <!--******************************************************
                                 MAIN
         ******************************************************-->
     <main>
         <div id="middle" class="d-flex">
-            <div id="sidebar" class="debug "><!-- sidebar -->
-                <div>logo</div>
-                <div>home</div>
-                <div>playlist</div>
-                <div>utente</div>
+            <div id="sidebar" class="debug pos-rel"><!-- sidebar -->
+                <img src="img/logo.svg" alt="logo">
+                <div id="home" class="d-flex f-collumn">
+                    <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Cerca</a>
+                    <a href="#"><i class="fa-solid fa-list"></i> La tua libreria</a>
+                </div>
+                <div id="playlist">
+                    <h3>playlist</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-plus"></i></a>Crea playlist</li>
+                        <li><a href="#"></a>Nome Playlist</li>
+                        <li><a href="#"></a>Nome Playlist</li>
+                        <li><a href="#"></a>Nome Playlist</li>
+                        <li><a href="#"></a>Nome Playlist</li>
+                    </ul>
+                </div>
+                <div id="user">
+                    <a href="#"><i class="fa-solid fa-circle-arrow-down"></i>Installa app</a>
+                    <hr>
+                    <a href="#"><i class="fa-regular fa-circle-user"></i>Frozen SMT</a>
+                </div>
             </div>
             <div id="main-content"><!-- main section -->
                 <section>Recently played</section>
@@ -39,6 +53,9 @@
 
                 <section>Creato per te</section>
                 <section>Artisti</section>
+            </div>
+            <div class="dubug">
+                <button>Gigi</button>
             </div>
         </div>
     </main>
