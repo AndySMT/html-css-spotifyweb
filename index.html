@@ -1,151 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
     <title>Spotify</title>
-</head>
+  </head>
 
-<body>
-    <!--******************************************************
+  <body>
+    <div id="wrapper d-flex f-column">
+      <!--******************************************************
                                 MAIN
         ******************************************************-->
-    <main>
+      <main>
         <div id="middle" class="d-flex">
-            <div id="sidebar" class="debug pos-rel d-flex f-collumn"><!-- sidebar -->
-                <img src="img/logo.svg" alt="logo">
-                <div id="home" class="d-flex f-collumn">
-                    <a href="#"><i class="fa-solid fa-house"></i> Home</a>
-                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Cerca</a>
-                    <a href="#"><i class="fa-solid fa-list"></i> La tua libreria</a>
-                </div>
-                <div id="playlist">
-                    <h3>playlist</h3>
-                    <ul>
-                        <li><a href="#"><i class="fa-solid fa-plus"></i></a>Crea playlist</li>
-                        <li><a href="#"></a>Nome Playlist</li>
-                        <li><a href="#"></a>Nome Playlist</li>
-                        <li><a href="#"></a>Nome Playlist</li>
-                        <li><a href="#"></a>Nome Playlist</li>
-                    </ul>
-                </div>
-                <div id="user">
-                    <a href="#"><i class="fa-solid fa-circle-arrow-down user-link"></i>Installa app</a>
-                    <hr>
-                    <a href="#"><i class="fa-regular fa-circle-user user-link"></i>Frozen SMT</a>
-                </div>
+          <div id="sidebar" class="pos-rel d-flex f-column">
+            <!-- sidebar -->
+            <img src="img/logo.svg" alt="logo" />
+            <div id="home" class="d-flex f-column">
+              <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+              <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Cerca</a>
+              <a href="#"><i class="fa-solid fa-list"></i> La tua libreria</a>
             </div>
-            <div id="main-content" class=""><!-- main section -->
-                <div class=>
-                    <ul class="d-flex j-center gap-10">
-                        <li><a href="#">In evidenza</a></li>
-                        <li><a href="#">Podcast</a></li>
-                        <li><a href="#">Classifiche</a></li>
-                        <li><a href="#">Generi e mood</a></li>
-                        <li><a href="#">Nuove uscite</a></li>
-                        <li><a href="#">Scopri</a></li>
-                    </ul>
-                </div>
-                <section>
-                    <h2 class="">Recently playerd</h2>
-                    <div id="card" class="d-flex gap-10">
-                        <div>
-                            <div>
-                                <img src="img/metal_lifting.jpg" alt="">
-                            </div>
-                            <div>
-                                <h4>Heavy Metal</h4>
-                                <span>Subtitle</span>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <img src="img/stranger.jpeg" alt="">
-                            </div>
-                            <div>
-                                <h4>Stranger Things, Vol. 1<br>
-                                    (a Netflix Oriiginal<br>
-                                    Series Soundtrack)</h4>
-                                <span>Kayle Dixon & Michael Stein</span>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <img src="img/aquietplace.jpeg" alt="">
-                            </div>
-                            <div>
-                                <h4>A quiet place</h4>
-                                <span>Subtitle</span>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <img src="img/split.jpeg" alt="">
-                            </div>
-                            <div>
-                                <h4>Split</h4>
-                                <span>Subtitle</span>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <img src="img/cure.jpeg" alt="">
-                            </div>
-                            <div>
-                                <h4>A cure for wellness</h4>
-                                <span>Subtitle</span>
-                            </div>
-                        </div>
-                        <div>
-                            <div>
-                                <img src="img/sinister.jpeg" alt="">
-                            </div>
-                            <div>
-                                <h4>Sinister</h4>
-                                <span>Subtitle</span>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- for u -->
-                <section>
-                    <h2>Creato per Frozen SMT</h2>
-                    <span>Piu ascolti,piu accurati saranno i suggerimenti</span>
-                    <div class="d-flex">
-                        <div>
-                            <img src="img/radar.jpeg" alt="">
-                        </div>
-                        <div>
-                            <img src="img/mixdaily.jpeg" alt="">
-                        </div>
-                    </div>
-                </section>
-                <!-- <section>Artisti</section> -->
+            <div id="playlist">
+              <h3>playlist</h3>
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-solid fa-plus"></i>Crea playlist</a>
+                </li>
+                <li>
+                  <a href="#">Nome Playlist</a>
+                </li>
+                <li>
+                  <a href="#">Nome Playlist</a>
+                </li>
+                <li>
+                  <a href="#">Nome Playlist</a>
+                </li>
+                <li>
+                  <a href="#">Nome Playlist</a>
+                </li>
+              </ul>
             </div>
-            <!-- <div>
-                <button>Gigi</button> 
-            </div> -->
+            <div id="user">
+              <a href="#"
+                ><i class="fa-solid fa-circle-arrow-down user-link"></i>Installa
+                app</a
+              >
+              <hr />
+              <a href="#"
+                ><i class="fa-regular fa-circle-user user-link"></i>Frozen
+                SMT</a
+              >
+            </div>
+          </div>
+          <div class="header d-flex a-center f-row-rev">
+            <a href="#" class="upgrade-button">Effettua l'uppgrade</a>
+          </div>
+          <div id="main-content" class="d-flex">
+            <!-- main section -->
+            <div class="header-li">
+              <ul class="d-flex j-center gap-10">
+                <li class="highlighter">
+                  <a href="#">In evidenza</a>
+                </li>
+                <li>
+                  <a href="#">Podcast</a>
+                </li>
+                <li>
+                  <a href="#">Classifiche</a>
+                </li>
+                <li>
+                  <a href="#">Generi e mood</a>
+                </li>
+                <li>
+                  <a href="#">Nuove uscite</a>
+                </li>
+                <li>
+                  <a href="#">Scopri</a>
+                </li>
+              </ul>
+            </div>
+            <section>
+              <h2 class="">Recently playerd</h2>
+              <div class="card-section" class="d-flex j gap-10">
+                <div class="card-div">
+                  <div>
+                    <img src="img/metal_lifting.jpg" alt="" />
+                  </div>
+                  <div>
+                    <h4>Heavy Metal</h4>
+                    <span class="text-lightgray">Subtitle</span>
+                  </div>
+                </div>
+                <div class="card-div">
+                  <div>
+                    <img src="img/stranger.jpeg" alt="" />
+                  </div>
+                  <div>
+                    <h4>
+                      Stranger Things, Vol. 1<br />
+                      (a Netflix Oriiginal<br />
+                      Series Soundtrack)
+                    </h4>
+                    <span class="text-lightgray"
+                      >Kayle Dixon & Michael Stein</span
+                    >
+                  </div>
+                </div>
+                <div class="card-div">
+                  <div>
+                    <img src="img/aquietplace.jpeg" alt="" />
+                  </div>
+                  <div>
+                    <h4>A quiet place</h4>
+                    <span class="text-lightgray">Subtitle</span>
+                  </div>
+                </div>
+                <div class="card-div">
+                  <div>
+                    <img src="img/split.jpeg" alt="" />
+                  </div>
+                  <div>
+                    <h4>Split</h4>
+                    <span class="text-lightgray">Subtitle</span>
+                  </div>
+                </div>
+                <div class="card-div">
+                  <div>
+                    <img src="img/cure.jpeg" alt="" />
+                  </div>
+                  <div>
+                    <h4>A cure for wellness</h4>
+                    <span class="text-lightgray">Subtitle</span>
+                  </div>
+                </div>
+                <div class="card-div">
+                  <div>
+                    <img src="img/sinister.jpeg" alt="" />
+                  </div>
+                  <div>
+                    <h4>Sinister</h4>
+                    <span class="text-lightgray">Subtitle</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- for u -->
+            <section>
+              <h2>Creato per Frozen SMT</h2>
+              <p class="margin-l-25 text-lightgray">
+                Piu ascolti,piu accurati saranno i suggerimenti
+              </p>
+              <div class="card-section">
+                <div class="card-div">
+                  <img src="img/radar.jpeg" alt="" />
+                </div>
+                <div class="card-div">
+                  <img src="img/mixdaily.jpeg" alt="" />
+                </div>
+              </div>
+            </section>
+            <section>
+              <h2>Artisti piu popolari</h2>
+              <p class="margin-l-25 text-lightgray">
+                Piu ascolti,piu accurati saranno i suggerimenti
+              </p>
+              <div class="card-section">
+                <div class="card-div">
+                  <img src="img/youg.jpeg" alt="" class="rounded-img" />
+                </div>
+                <div class="card-div">
+                  <img src="img/einaudi.jpeg" alt="" class="rounded-img" />
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
-    </main>
-    <!--******************************************************
+      </main>
+      <!--******************************************************
                                 FOOTER
         ******************************************************-->
-    <footer class="debug">
-        <div class="debug d-flex j-between">
-            <div>foto</div>
-            <div>traccia</div>
-            <div>volume</div>
+      <footer class="debug">
+        <div class="d-flex j-between">
+          <div>
+            <div class="d-flex a-center text-lightgray">
+              <img src="img/sinister.jpeg" alt="album" />
+              <div class="d-flex f-column">
+                <h4>Sinister</h4>
+                <span>Sto facendo cose</span>
+              </div>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-regular fa-folder"></i>
+            </div>
+          </div>
+          <div class="d-flex f-column a-center">
+            <div>
+              <i class="fa-solid fa-shuffle"></i>
+              <i class="fa-solid fa-backward-step"></i>
+              <i class="fa-regular fa-circle-play"></i>
+              <i class="fa-solid fa-forward-step"></i>
+              <i class="fa-solid fa-forward-step"></i>
+            </div>
+            <div class="d-flex a-center">
+              <span>0:22</span>
+              <audio src=""></audio>
+              <span>1:22</span>
+            </div>
+          </div>
+          <div class="d-flex a-center">
+            <i class="fa-solid fa-list-ul"></i>
+            <i class="fa-solid fa-desktop"></i>
+            <i class="fa-solid fa-volume-high"></i>
+            <span>--------</span>
+          </div>
         </div>
-    </footer>
-</body>
-
+      </footer>
+    </div>
+  </body>
 </html>
