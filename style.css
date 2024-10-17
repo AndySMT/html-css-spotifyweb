@@ -132,6 +132,7 @@ body {
 
 #home {
   padding: 15px;
+
   /* flex-grow: 3; */
 }
 
@@ -151,15 +152,17 @@ body {
 }
 
 #playlist {
+  width: 100%;
   padding: 15px;
   flex-grow: 1;
+  flex-wrap: nowrap;
 }
 
 /* non funziona */
 #playlist ul li a {
   margin-bottom: 20px;
   color: var(--color-lightgrey);
-  border: 1px solid var(--color-redcolor);
+  /* border: 1px solid var(--color-redcolor); */
 }
 
 .playlist li {
@@ -212,6 +215,25 @@ body {
 
 .card-div {
   width: calc((100% - 60px) / 6);
+  position: relative;
+}
+.layover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3em;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.card-div:hover .layover {
+  opacity: 1;
 }
 
 .header {
@@ -271,10 +293,17 @@ header a {
   border: 1px solid #ffffff;
   padding: 10px 10px;
   border-radius: 20px;
+  opacity: 0.5;
+}
+.upgrade-button:hover {
+  font-size: 20px;
 }
 
 .rounded-img {
   border-radius: 50%;
+}
+.logo-small {
+  display: none;
 }
 
 /* ********************************
@@ -292,4 +321,52 @@ footer img {
   width: auto;
   height: 90px;
   padding: 10px;
+}
+
+footer #playbar > div:first-child,
+footer #playbar > div:nth-child(3) {
+  width: 250px;
+}
+footer #playbar > div:nth-child(2) {
+  flex-grow: 1;
+}
+#playbar-center:first-child {
+  width: 70%;
+}
+#playbar-center {
+  display: flex;
+  justify-content: space-between;
+}
+#playbar-center:last-child {
+  width: 30%;
+}
+
+/* ********************************
+            MEDIA QUERIES
+******************************** */
+@media screen and (max-width: 1200px) {
+  #middle .card-div {
+    width: calc((100% - 40px) / 4);
+  }
+}
+@media screen and (max-width: 996px) {
+  #middle .card-div {
+    width: calc((100% - 30px) / 3);
+  }
+}
+@media screen and (max-width: 768px) {
+  #middle .card-div {
+    width: calc((100% - 20px) / 2);
+  }
+}
+@media screen and (max-width: 576px) {
+  .d-none {
+    display: none;
+  }
+  .logo-small {
+    display: block;
+  }
+  .logo {
+    display: none;
+  }
 }

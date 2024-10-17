@@ -21,7 +21,7 @@
   </head>
 
   <body>
-    <div id="wrapper d-flex f-column">
+    <div id="wrapper" class="d-flex f-column">
       <!--******************************************************
                                 MAIN
         ******************************************************-->
@@ -29,11 +29,21 @@
         <div id="middle" class="d-flex">
           <div id="sidebar" class="pos-rel d-flex f-column">
             <!-- sidebar -->
-            <img src="img/logo.svg" alt="logo" />
+            <img src="img/logo.svg" alt="logo" class="logo" />
+            <img src="img/logo-small.svg" alt="logo-small" class="logo-small" />
             <div id="home" class="d-flex f-column">
-              <a href="#"><i class="fa-solid fa-house"></i> Home</a>
-              <a href="#"><i class="fa-solid fa-magnifying-glass"></i> Cerca</a>
-              <a href="#"><i class="fa-solid fa-list"></i> La tua libreria</a>
+              <a href="#">
+                <i class="fa-solid fa-house"></i>
+                <span class="d-none">Home</span>
+              </a>
+              <a href="#">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span class="d-none">Cerca</span>
+              </a>
+              <a href="#">
+                <i class="fa-solid fa-list"></i>
+                <span class="d-none">La tua Libreria</span>
+              </a>
             </div>
             <div id="playlist">
               <h3>playlist</h3>
@@ -95,11 +105,17 @@
               </ul>
             </div>
             <section>
-              <h2 class="">Recently playerd</h2>
-              <div class="card-section" class="d-flex j gap-10">
+              <h2 class>Recently playerd</h2>
+              <div class="card-section d-flex j gap-10">
                 <div class="card-div">
                   <div>
-                    <img src="img/metal_lifting.jpg" alt="" />
+                    <img
+                      src="img/metal_lifting.jpg"
+                      alt="Heavy Metal Album Cover"
+                    />
+                    <div class="layover">
+                      <i class="fa-regular fa-circle-play"></i>
+                    </div>
                   </div>
                   <div>
                     <h4>Heavy Metal</h4>
@@ -108,7 +124,10 @@
                 </div>
                 <div class="card-div">
                   <div>
-                    <img src="img/stranger.jpeg" alt="" />
+                    <img src="img/stranger.jpeg" alt="Stranger" />
+                    <div class="layover">
+                      <i class="fa-regular fa-circle-play"></i>
+                    </div>
                   </div>
                   <div>
                     <h4>
@@ -123,7 +142,10 @@
                 </div>
                 <div class="card-div">
                   <div>
-                    <img src="img/aquietplace.jpeg" alt="" />
+                    <img src="img/aquietplace.jpeg" alt />
+                    <div class="layover">
+                      <i class="fa-regular fa-circle-play"></i>
+                    </div>
                   </div>
                   <div>
                     <h4>A quiet place</h4>
@@ -132,7 +154,10 @@
                 </div>
                 <div class="card-div">
                   <div>
-                    <img src="img/split.jpeg" alt="" />
+                    <img src="img/split.jpeg" alt />
+                    <div class="layover">
+                      <i class="fa-regular fa-circle-play"></i>
+                    </div>
                   </div>
                   <div>
                     <h4>Split</h4>
@@ -141,7 +166,10 @@
                 </div>
                 <div class="card-div">
                   <div>
-                    <img src="img/cure.jpeg" alt="" />
+                    <img src="img/cure.jpeg" alt />
+                    <div class="layover">
+                      <i class="fa-regular fa-circle-play"></i>
+                    </div>
                   </div>
                   <div>
                     <h4>A cure for wellness</h4>
@@ -150,7 +178,10 @@
                 </div>
                 <div class="card-div">
                   <div>
-                    <img src="img/sinister.jpeg" alt="" />
+                    <img src="img/sinister.jpeg" alt />
+                    <div class="layover">
+                      <i class="fa-regular fa-circle-play"></i>
+                    </div>
                   </div>
                   <div>
                     <h4>Sinister</h4>
@@ -167,10 +198,10 @@
               </p>
               <div class="card-section">
                 <div class="card-div">
-                  <img src="img/radar.jpeg" alt="" />
+                  <img src="img/radar.jpeg" alt />
                 </div>
                 <div class="card-div">
-                  <img src="img/mixdaily.jpeg" alt="" />
+                  <img src="img/mixdaily.jpeg" alt />
                 </div>
               </div>
             </section>
@@ -181,10 +212,10 @@
               </p>
               <div class="card-section">
                 <div class="card-div">
-                  <img src="img/youg.jpeg" alt="" class="rounded-img" />
+                  <img src="img/youg.jpeg" alt class="rounded-img" />
                 </div>
                 <div class="card-div">
-                  <img src="img/einaudi.jpeg" alt="" class="rounded-img" />
+                  <img src="img/einaudi.jpeg" alt class="rounded-img" />
                 </div>
               </div>
             </section>
@@ -194,8 +225,8 @@
       <!--******************************************************
                                 FOOTER
         ******************************************************-->
-      <footer class="debug">
-        <div class="d-flex j-between">
+      <footer class="">
+        <div id="playbar" class="d-flex">
           <div>
             <div class="d-flex a-center text-lightgray">
               <img src="img/sinister.jpeg" alt="album" />
@@ -203,29 +234,41 @@
                 <h4>Sinister</h4>
                 <span>Sto facendo cose</span>
               </div>
-              <i class="fa-regular fa-heart"></i>
-              <i class="fa-regular fa-folder"></i>
+              <a><i class="fa-regular fa-heart"></i></a>
+              <a><i class="fa-regular fa-folder"></i></a>
             </div>
           </div>
-          <div class="d-flex f-column a-center">
-            <div>
-              <i class="fa-solid fa-shuffle"></i>
-              <i class="fa-solid fa-backward-step"></i>
-              <i class="fa-regular fa-circle-play"></i>
-              <i class="fa-solid fa-forward-step"></i>
-              <i class="fa-solid fa-forward-step"></i>
+          <div id="palybar-center" class="d-flex a-center">
+            <div class="">
+              <ul>
+                <li>
+                  <a><i class="fa-solid fa-shuffle"></i></a>
+                </li>
+                <li>
+                  <a><i class="fa-solid fa-backward-step"></i></a>
+                </li>
+                <li>
+                  <a><i class="fa-regular fa-circle-play"></i></a>
+                </li>
+                <li>
+                  <a><i class="fa-solid fa-forward-step"></i></a>
+                </li>
+                <li>
+                  <a><i class="fa-solid fa-forward-step"></i></a>
+                </li>
+              </ul>
             </div>
             <div class="d-flex a-center">
               <span>0:22</span>
-              <audio src=""></audio>
+              <input type="range" />
               <span>1:22</span>
             </div>
           </div>
           <div class="d-flex a-center">
-            <i class="fa-solid fa-list-ul"></i>
-            <i class="fa-solid fa-desktop"></i>
-            <i class="fa-solid fa-volume-high"></i>
-            <span>--------</span>
+            <a><i class="fa-solid fa-list-ul"></i></a>
+            <a><i class="fa-solid fa-desktop"></i></a>
+            <a><i class="fa-solid fa-volume-high"></i></a>
+            <span><input type="range" /></span>
           </div>
         </div>
       </footer>
