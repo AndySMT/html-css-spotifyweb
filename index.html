@@ -66,24 +66,24 @@
               </ul>
             </div>
             <div id="user">
-              <a href="#"
-                ><i class="fa-solid fa-circle-arrow-down user-link"></i>Installa
-                app</a
-              >
+              <a href="#">
+                <i class="fa-solid fa-circle-arrow-down user-link"></i>
+                <span class="d-none">Installa app</span>
+              </a>
               <hr />
-              <a href="#"
-                ><i class="fa-regular fa-circle-user user-link"></i>Frozen
-                SMT</a
+              <a href="#">
+                <i class="fa-regular fa-circle-user user-link"></i>
+                <span class="d-none">Frozen SMT</span></a
               >
             </div>
           </div>
           <div class="header d-flex a-center f-row-rev">
-            <a href="#" class="upgrade-button">Effettua l'uppgrade</a>
+            <a href="#" class="upgrade-button">Effettua l'upgrade</a>
           </div>
           <div id="main-content" class="d-flex">
             <!-- main section -->
             <div class="header-li">
-              <ul class="d-flex j-center gap-10">
+              <ul class="d-flex j-center f-wrap gap-10">
                 <li class="highlighter">
                   <a href="#">In evidenza</a>
                 </li>
@@ -227,47 +227,52 @@
         ******************************************************-->
       <footer class="">
         <div id="playbar" class="d-flex">
-          <div>
+          <div class="album">
             <div class="d-flex a-center text-lightgray">
               <img src="img/sinister.jpeg" alt="album" />
               <div class="d-flex f-column">
                 <h4>Sinister</h4>
                 <span>Sto facendo cose</span>
               </div>
-              <a><i class="fa-regular fa-heart"></i></a>
-              <a><i class="fa-regular fa-folder"></i></a>
+              <div class="gap-10">
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <a href="#"><i class="fa-regular fa-folder"></i></a>
+              </div>
             </div>
           </div>
-          <div id="palybar-center" class="d-flex a-center">
-            <div class="">
-              <ul>
+          <div
+            id="playbar-center"
+            class="d-flex a-center j-center f-column gap-10"
+          >
+            <div id="playbar-menu">
+              <ul class="d-flex gap-10">
                 <li>
-                  <a><i class="fa-solid fa-shuffle"></i></a>
+                  <a href="#"><i class="fa-solid fa-shuffle"></i></a>
                 </li>
                 <li>
-                  <a><i class="fa-solid fa-backward-step"></i></a>
+                  <a href="#"><i class="fa-solid fa-backward-step"></i></a>
                 </li>
                 <li>
-                  <a><i class="fa-regular fa-circle-play"></i></a>
+                  <a href="#"><i class="fa-regular fa-circle-play"></i></a>
                 </li>
                 <li>
-                  <a><i class="fa-solid fa-forward-step"></i></a>
+                  <a href="#"><i class="fa-solid fa-forward-step"></i></a>
                 </li>
                 <li>
-                  <a><i class="fa-solid fa-forward-step"></i></a>
+                  <a href="#"><i class="fa-solid fa-forward-step"></i></a>
                 </li>
               </ul>
             </div>
             <div class="d-flex a-center">
               <span>0:22</span>
-              <input type="range" />
+              <input type="range" id="time" name="time" min="0" max="100" />
               <span>1:22</span>
             </div>
           </div>
-          <div class="d-flex a-center">
-            <a><i class="fa-solid fa-list-ul"></i></a>
-            <a><i class="fa-solid fa-desktop"></i></a>
-            <a><i class="fa-solid fa-volume-high"></i></a>
+          <div id="volume" class="d-flex a-center gap-10">
+            <a href="#"><i class="fa-solid fa-list-ul"></i></a>
+            <a href="#"><i class="fa-solid fa-desktop"></i></a>
+            <a href="#"><i class="fa-solid fa-volume-high"></i></a>
             <span><input type="range" /></span>
           </div>
         </div>
