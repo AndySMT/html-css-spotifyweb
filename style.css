@@ -121,7 +121,7 @@ body {
 }
 
 #sidebar {
-  width: 300px;
+  width: 230px;
   background-color: var(--color-black);
   padding: 15px;
 }
@@ -199,8 +199,8 @@ body {
   flex-direction: column;
   overflow-y: auto;
   padding: 5px;
-  padding-top: 100px;
-  width: calc(100% - 300px);
+  padding-top: 70px;
+  width: calc(100% - 230px);
 }
 
 #main-content h2 {
@@ -242,7 +242,7 @@ body {
   height: 70px;
   position: fixed;
   top: 0;
-  left: 300px;
+  left: 0;
   width: 100%;
   z-index: 1000;
   background-color: rgba(0, 0, 0, 0.5);
@@ -275,7 +275,7 @@ header a {
     border: 1px solid var(--color-light);
 } */
 .header-li {
-  padding-top: 70px;
+  padding-top: 10px;
 }
 
 .header-li ul li a {
@@ -298,7 +298,7 @@ header a {
   opacity: 0.5;
 }
 .upgrade-button:hover {
-  font-size: 20px;
+  transform: scale(1.2);
 }
 
 .rounded-img {
@@ -349,6 +349,15 @@ footer a {
 /* #playbar-menu .fa-circle-play:hover {
 }
  */
+
+#playbar a:hover {
+  color: var(--color-light);
+}
+#playbar-menu ul :nth-child(3):hover {
+  transform: scale(2);
+  transition: all 0.4s ease;
+}
+
 /* ********************************
             MEDIA QUERIES
 ******************************** */
@@ -367,39 +376,71 @@ footer a {
   #middle .card-div {
     width: calc((100% - 20px) / 2);
   }
+  #main-content {
+    width: calc(100% - 230px);
+  }
   .d-none {
     display: none;
   }
   .logo-small {
     display: block;
+    width: 40px;
   }
   .logo {
     display: none;
   }
-  /* perche non finzionaaaa ? */
-  .album div *:not(img) {
+  #sidebar img {
+    width: 40%;
+  }
+  #sidebar #playlist {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #album #sidebar {
+    width: 70px;
+  }
+
+  #volume :not(#volume-bar) {
     display: none;
   }
-}
-#volume {
-  display: none;
-}
-#sidebar {
-  /* flex: 0 0 50px; */
-  width: 70px;
-}
-#playlist {
-  visibility: hidden;
-}
-.header {
-  width: calc(100% - 130px);
-}
-#playbar-menu {
-  /* display: flex;
+  #volume-bar {
+    transform: rotate(90deg);
+    transition: all 0.7s ease;
+    width: 80px;
+    align-items: end;
+  }
+
+  /* .header {
+    width: calc(100% - 130px);
+  } */
+  #playbar-menu {
+    /* display: flex;
     align-items: center;
     justify-content: center; */
-  margin-top: 20px;
-}
-
-@media screen and (max-width: 576px) {
+    margin-top: 20px;
+  }
+  #playbar-album-icon {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  /* .album div *:not(img) {
+    display: none;
+  } */
+  #playbar-album-name {
+    display: none;
+  }
+  /* #sidebar a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+  @media screen and (max-width: 576px) {
+    #main-content {
+      width: calc(100% - 230px);
+    }
+  }
 }

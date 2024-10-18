@@ -230,12 +230,12 @@
           <div class="album">
             <div class="d-flex a-center text-lightgray">
               <img src="img/sinister.jpeg" alt="album" />
-              <div class="d-flex f-column">
+              <div id="playbar-album-name" class="d-flex f-column">
                 <h4>Sinister</h4>
                 <span>Sto facendo cose</span>
               </div>
-              <div class="gap-10">
-                <a href="#"><i class="fa-regular fa-heart"></i></a>
+              <div id="playbar-album-icon" class="gap-10">
+                <a href="#"><i class="fa-regular fa-heart gap-10"></i></a>
                 <a href="#"><i class="fa-regular fa-folder"></i></a>
               </div>
             </div>
@@ -273,7 +273,13 @@
             <a href="#"><i class="fa-solid fa-list-ul"></i></a>
             <a href="#"><i class="fa-solid fa-desktop"></i></a>
             <a href="#"><i class="fa-solid fa-volume-high"></i></a>
-            <span><input type="range" /></span>
+            <input
+              type="range"
+              id="volume-bar"
+              name="volume"
+              min="0"
+              max="100"
+            />
           </div>
         </div>
       </footer>
